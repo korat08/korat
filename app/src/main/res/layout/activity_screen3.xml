@@ -48,6 +48,7 @@
         android:id="@+id/firstname"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
+
     <View
         android:layout_width="wrap_content"
         android:layout_height="10dp"/>
@@ -77,7 +78,7 @@
         android:textColor="@color/black"/>
 
     <EditText
-        android:id="@+id/PhoneNumber"
+        android:id="@+id/phonenumber"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="phone" />
@@ -94,7 +95,7 @@
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/Email"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress" />
@@ -112,7 +113,7 @@
 
 
     <EditText
-        android:id="@+id/Age"
+        android:id="@+id/age"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="number" />
@@ -129,7 +130,7 @@
         android:textStyle="bold"/>
 
     <EditText
-        android:id="@+id/City"
+        android:id="@+id/city"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
     <View

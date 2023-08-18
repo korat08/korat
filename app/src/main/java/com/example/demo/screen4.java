@@ -12,7 +12,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class screen4 extends AppCompatActivity {
 
-
     EditText job, experience, education, language, skills, techanical;
 
     Button create;
@@ -21,6 +20,8 @@ public class screen4 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen4);
+
+
 
         create = findViewById(R.id.create);
         job = findViewById(R.id.job);
@@ -35,6 +36,12 @@ public class screen4 extends AppCompatActivity {
 
         create.setOnClickListener(view -> {
 
+            String getfullname=getIntent().getStringExtra("flt");
+            String getphone=getIntent().getStringExtra("pt");
+            String getemail=getIntent().getStringExtra("et");
+            String getage=getIntent().getStringExtra("at");
+            String getcity=getIntent().getStringExtra("ct");
+
             String getjob = job.getText().toString();
             String getexperience = experience.getText().toString();
             String geteducation = education.getText().toString();
@@ -43,12 +50,17 @@ public class screen4 extends AppCompatActivity {
             String gettechanical = techanical.getText().toString();
 
             showToast(getApplicationContext(),"Creating Resume");
+            inext.putExtra("flt",getfullname);
+            inext.putExtra("pt",getphone);
+            inext.putExtra("et",getemail);
+            inext.putExtra("at",getage);
+            inext.putExtra("ct",getcity);
             inext.putExtra("jobt", getjob);
-            inext.putExtra("experiencet", getexperience);
-            inext.putExtra("educationt", geteducation);
-            inext.putExtra("languaget", getlanguage);
-            inext.putExtra("skillst", getskills);
-            inext.putExtra("technicalt", gettechanical);
+            inext.putExtra("ext", getexperience);
+            inext.putExtra("edt", geteducation);
+            inext.putExtra("lat", getlanguage);
+            inext.putExtra("skt", getskills);
+            inext.putExtra("techt", gettechanical);
             startActivity(inext);
         });
     }
