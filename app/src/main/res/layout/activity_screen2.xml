@@ -8,19 +8,26 @@
     tools:context=".screen2">
     <View
         android:layout_width="wrap_content"
-        android:layout_height="30dp"/>
+        android:layout_height="40dp"/>
+<ImageView
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:alpha="0.1"
+    android:background="@drawable/icon4"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
         android:layout_marginTop="20dp"
         android:gravity="center"
         android:orientation="horizontal">
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_margin="20dp"
+            android:layout_marginHorizontal="20dp"
             android:layout_marginLeft="10dp"
             android:background="@drawable/dot"
             android:orientation="vertical" />
@@ -28,14 +35,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text=" Resume Bulider "
+            android:text=" Resume Builder "
             android:textColor="@color/black"
             android:textSize="30dp" />
 
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_margin="20dp"
             android:background="@drawable/help" />
 
@@ -128,7 +134,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:id="@+id/login"
-                android:text="login"
+                android:text="Signup"
                 android:textSize="25dp"
                 android:backgroundTint="@color/black">
 
@@ -139,7 +145,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Or login with"
+                android:text="Or Signup with"
                 android:alpha="0.7"
                 android:layout_gravity="center"/>
         <LinearLayout

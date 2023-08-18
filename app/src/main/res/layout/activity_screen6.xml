@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/screen6"
+    android:background="@color/backcolor"
     tools:context=".screen6">
 
    <LinearLayout
        android:layout_width="match_parent"
        android:layout_height="150dp"
        android:orientation="vertical"
+       android:layout_marginTop="300dp"
        android:layout_gravity="center"
        android:layout_marginLeft="30dp"
        android:layout_marginRight="30dp">
@@ -33,4 +34,40 @@
            android:text="korat aryan"/>
 
    </LinearLayout>
-</LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="Follou us"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:layout_alignTop="@+id/is"/>
+    <LinearLayout
+        android:id="@+id/is"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/instagram"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/facebook" />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="12dp"
+            android:background="@drawable/twi1"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
