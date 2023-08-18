@@ -37,7 +37,7 @@ public class screen3 extends AppCompatActivity {
 
             String getfirstname = firstname.getText().toString();
             String getlastname = lastname.getText().toString();
-            String fullname=getfirstname +""+ getlastname;
+            String fullname=getfirstname+" "+getlastname;
 
             String getfullname = fullname.toString();
             String getphone = phonenumber.getText().toString();

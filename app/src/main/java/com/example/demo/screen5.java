@@ -63,6 +63,8 @@ public class screen5 extends AppCompatActivity {
         Intent inext = new Intent(screen5.this, screen6.class);
 
         done.setOnClickListener(view -> {
+            String getfullname=getIntent().getStringExtra("flt");
+            inext.putExtra("flt",getfullname);
             startActivity(inext);
         });
     }
