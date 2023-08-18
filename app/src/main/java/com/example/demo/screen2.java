@@ -34,16 +34,16 @@ public class screen2 extends AppCompatActivity {
             String email1 = email.getText().toString();
             String pass1 = password.getText().toString();
 
-//            if (email1.endsWith("@gmail.com")) {
-//                if (pass1.length() >= 6) {
+            if (email1.endsWith("@gmail.com")) {
+                if (pass1.length() >= 6) {
                     startActivity(inext);
-//                } else {
+                } else {
                     showToast(getApplicationContext(), "Password must be at least 6 characters");
-//                }
-//            } else {
-//
-//                showToast(getApplicationContext(), "invalid Gmail address");
-//            }
+                }
+            } else {
+
+                showToast(getApplicationContext(), "invalid Gmail address");
+            }
         });
     }
 }
